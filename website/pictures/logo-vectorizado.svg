@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="231" height="100" viewBox="0 0 231 100"
+     role="img" aria-labelledby="title description">
+  <title id="title">Logo vectorizado</title>
+  <desc id="description">Símbolo geométrico amarillo y grafito con el texto visible REM. El borde derecho conserva el recorte de la imagen original.</desc>
+
+  <defs>
+    <linearGradient id="yellowMark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffdc28"/>
+      <stop offset="0.38" stop-color="#ffcf05"/>
+      <stop offset="1" stop-color="#f7bd00"/>
+    </linearGradient>
+    <linearGradient id="yellowType" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe85a"/>
+      <stop offset="0.22" stop-color="#ffd623"/>
+      <stop offset="0.72" stop-color="#ffca00"/>
+      <stop offset="1" stop-color="#e9ad00"/>
+    </linearGradient>
+
+    <!-- Letter outlines based on a metrically compatible Helvetica/Arial bold face. -->
+    <path id="glyph-r" d="M1105 0 778 535H432V0H137V1409H841Q1093 1409 1230 1300.5Q1367 1192 1367 989Q1367 841 1283 733.5Q1199 626 1056 592L1437 0ZM1070 977Q1070 1180 810 1180H432V764H818Q942 764 1006 820Q1070 876 1070 977Z"/>
+    <path id="glyph-e" d="M137 0V1409H1245V1181H432V827H1184V599H432V228H1286V0Z"/>
+    <path id="glyph-m" d="M1307 0V854Q1307 883 1307.5 912Q1308 941 1317 1161Q1246 892 1212 786L958 0H748L494 786L387 1161Q399 929 399 854V0H137V1409H532L784 621L806 545L854 356L917 582L1176 1409H1569V0Z"/>
+
+    <g id="wordmark">
+      <use xlink:href="#glyph-r" transform="translate(153.1 62) scale(.015625 -.015625)"/>
+      <use xlink:href="#glyph-e" transform="translate(180.209 62) scale(.015625 -.015625)"/>
+      <use xlink:href="#glyph-m" transform="translate(205.553 62) scale(.015625 -.015625)"/>
+    </g>
+  </defs>
+
+  <!-- Rear diamond. -->
+  <path d="M87.5.5 138.3 50.5 87.5 99.5 37.1 50.5Z"
+        fill="#29242b" stroke="#17141a" stroke-width=".7" stroke-linejoin="round"/>
+
+  <!-- Interlocking front mark. -->
+  <path d="M51.3.5 69.1 17.5 37.5 50.5 54.3 66.8 85.5 34.6 102.4 50.6 51.3 99.5.6 50.5Z"
+        fill="url(#yellowMark)" stroke="#a77900" stroke-width=".65" stroke-linejoin="round"/>
+
+  <!-- Vector shadow and main wordmark. The viewBox intentionally clips the final M. -->
+  <use xlink:href="#wordmark" transform="translate(.8 1.15)"
+       fill="#655323" stroke="#3f3b39" stroke-width="1.45" stroke-linejoin="miter"/>
+  <use xlink:href="#wordmark"
+       fill="url(#yellowType)" stroke="#bf9000" stroke-width=".72" stroke-linejoin="miter"/>
+</svg>
